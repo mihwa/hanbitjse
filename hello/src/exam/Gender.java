@@ -34,7 +34,7 @@ public class Gender {
 		Scanner scanner =new Scanner(System.in);
 		
 		
-		System.out.println("[출력문]"+);//[출력문] 홍길동(남),아이유(여)
+		System.out.println("[출력문]");//[출력문] 홍길동(남),아이유(여)
 		
 		
 		

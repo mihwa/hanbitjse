@@ -22,7 +22,11 @@ public class TimeCalc {
  * 25시간 32분 15초 이렇게 보이게 해주세요
  * [출력] 25시간  32분  15초
  * 최초의초
+ * hour=sec/60/60;
+ * min=sec/60%60;
+ * sec=sec%60;
  */
+	
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		int hour=0,min=0,sec=0,secInput=0;
@@ -31,7 +35,7 @@ public class TimeCalc {
 		System.out.println("입력초");
 		secInput =scanner.nextInt();
 		
-		System.out.println("[출력]"+(secInput/3600)+"시간"+(secInput%3600/60)+"분"+(secInput%3600%60)+"초" );
+		System.out.println("[출력]"+(secInput/3600)+"시간"+(secInput%3600/60)+"분"+(secInput%3600%60)+"초" );//120/60=2시간 ,121분 %60=1분
 	}
 	
 }
