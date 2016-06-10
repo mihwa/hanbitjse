@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author :CHOI MIHWA
  * @file   :Avg2.java
  * @story  :학점내기//
- 
+
  * 이름과 국,영,수 세과목점수를 입력받아서
  * [홍길동:총점***점,평균***점,학점:F]
  * 단)평균은 소수점이하는 절삭합니다
@@ -17,14 +17,14 @@ import java.util.Scanner;
  * 50점 이상이면E
  * 50점 미만이면 F학점입니다
  * 출력되게해주세요
- * 단 switch-case문으로 해결
-*/
- public class Avg2 {
-	 public static void main(String[] args) {
+ */
+
+public class Avg4 {
+	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
-				String name="",result="";
+		String name="",result="";
 		int total=0,aver=0,kor=0,eng=0,math=0,point=0;
-		
+
 		System.out.println("이름");
 		name=scan.nextLine();
 		System.out.println("국어");
@@ -36,7 +36,7 @@ import java.util.Scanner;
 		System.out.println("영어");
 		eng=scan.nextInt();
 		if (eng>100||eng<0) {
-			System.err.println("0~100점의 점수만 입력해주세요");
+			System.out.println();			
 			return;
 		}
 		System.out.println("수학");
@@ -48,21 +48,29 @@ import java.util.Scanner;
 		total=kor+eng+math;
 		aver=total/3;
 		
-		if (aver>90) {
-			result="A";
-		}else if (aver>80) {
-			result="B";
-		}else if (aver>70) {
-			result="C";
-		}else if (aver>60) {
-			result="D";
-		}else if (aver>50) {
-			result="E";
-		}else if (aver<50) {
-			result="F";
-		}
+		switch (aver) {
+		case 10: case 9:
+			result="A";break;
+					
+		case 8: result="B";break;
+				
+		case 7: result="C";break;
+			
+		case 6: result="D";break;
 		
-	System.out.println("["+name+":총점"+total+"점,평균"+aver+"점,학점:"+result);
+		case 5: result="E";break;
+			
+		case 4:case 3:case 2:case 1:case 0: result="F";break;
+		
+		default:
+			break;
+		}
+		System.out.println("["+name+":총점"+total+"점,평균"+aver+"점,학점:"+result);
 	}
-
+	
 }
+
+
+
+
+

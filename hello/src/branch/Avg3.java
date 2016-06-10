@@ -49,6 +49,8 @@ public static void main(String[] args) {
 	}
 	total=kor+eng+math;
 	aver=total/3;
+
+
 	
 	if (aver>=90) {
 		result="A";
@@ -67,3 +69,5 @@ public static void main(String[] args) {
 		
 	}
 }
+
+
