@@ -32,7 +32,10 @@ public class Gender {
 	public static void main(String[] args) {
 		
 		Scanner scanner =new Scanner(System.in);
+		String snn="",name="",gender="";
 		
+		
+	
 		
 		
 		

@@ -3,6 +3,8 @@
  */
 package exam;
 
+import java.util.Scanner;
+
 /**
  * @date   :2016. 6. 10.
  * @author :CHOI MIHWA
@@ -25,26 +27,28 @@ public class MonthEnd5 {
 +	 * 2000년은 4로 나눈값이 0이라서 윤년의 조건은 되는데
 +	 * 다시 이 값이 100으로 나눠 떨어지기 때문에 평년이 되었다.
 +	 * 평년이라해도 다시 400으로 나눠떨어지는 년도는 윤년이다 
-+	 * */
++	 * year%4==10 year%100!=0 year%400==0 */
 	public static void main(String[] args) {
 		// --------init---------
 		Scanner scanner = new Scanner(System.in);
-		int malil=0;
+		int malil=0; 
+		//
 		//---------op --------
 		System.out.println("년 입력?(예)2016");
-		int year=2016;
+		int year=scanner.nextInt();
 		System.out.println("월 입력?(예)2");
-		int month = 2;
-		switch (scanner.nextInt()) {
+		int month =scanner.nextInt();
+		
+		switch (month) {
 		case 1:case 3:case 5:case 7:case 8:case 10:case 12:
 			malil = 31;
 			break;
 		case 2:
-			if(year==1){
-				malil = 29;
+			if(){
+				
 			}else{
-				malil = 28;
-			}
+				
+			}//    끝내때 malil=(year%4==0&&year%100!=0||year%400==0)? 29: 28;//연산자=가들어가면않된다.?():;
 			break;
 		case 4:case 6:case 9:case 11:
 			malil = 30;
@@ -52,4 +56,4 @@ public class MonthEnd5 {
 		default:System.out.println("잘못 입력 되었습니다");
 			return;
 		}
-		System.out.println(year+"년"+month+"월"+malil+"일");
+		System.out.printf(year+"년"+month+"월"+malil+"일");//System.out.printf("%d%s%d%s일",year,"년",month,"월",malil,"일")}}

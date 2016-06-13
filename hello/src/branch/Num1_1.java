@@ -35,7 +35,13 @@ public class Num1_1 {
 		String S1="",S2="",S3="";
 		int score1=0,score2=0,score3=0;
 		
-		System.out.println("S1:");
+		for (int i = 1; i <=3; i++) {
+			System.out.println("이름,점수입력");
+			name=scan.next();
+			avg=scan.nextInt();
+			
+		}
+		
 		S1=scan.nextLine();
 		System.out.println("S2:");
 		S2=scan.next();

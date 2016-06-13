@@ -31,66 +31,17 @@ public class Num1 {
  *  3등 홍길동 49점
  */
 	public static void main(String[] args) {
-		Scanner scan=new Scanner(System.in);
-		String S1="",S2="",S3="";
-		int score1=0,score2=0,score3=0;
-		
-		System.out.println("S1:");
-		S1=scan.nextLine();
-		System.out.println("S2:");
-		S2=scan.next();
-		System.out.println("S3:");
-		S3=scan.next();
-		
-		
-		if (S1.equals("")||S2.equals("")||S3.equals("")) {
-			System.out.println("학생이름전부기재");
-			return;
-		}		
+
 	
-				System.out.println(S1+"학생의평균점수입력:");
-				score1=scan.nextInt();
-				if (score1>100||score1<0) {
-					System.out.println("점수는0~100까지 입력가능");
-					return;
-				}
-				System.out.println(S2+"학생의평균점수입력:");
-				score2=scan.nextInt();
-				if (score2>100||score2<0) {
-					System.out.println("점수는0~100까지 입력가능");return;
-					
-				}
-				System.out.println(S3+"학생의 평균점수입력:");
-				score3=scan.nextInt();
-				if (score3>100||score2<0) {
-					System.out.println("점수는0~100까지입력가능");
-					return;
-				}
-				String one="",two="",three="";
-				if (score1>score2 && score1>score3) {
-					one=S1;
-					if (score2>score3) {
-						two=S2;
-						three=S3;
-					}else{
-						two=S3;
-						three=S2;
-					}
-					
-				}else if (score2>score1 && score2>score3) {
-				one=S2;
-				if (score1>score3) {
-					two=S1;
-					three=S3;
-				}else   {
-					two=S2;
-							three=S1;
-					
-				}
-						
-				}
-			
-				
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
-	
-}

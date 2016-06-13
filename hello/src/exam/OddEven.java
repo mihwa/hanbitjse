@@ -20,42 +20,34 @@ public class OddEven {
  * (사용자가모르는 랜덤을 써야한다)
  * 
  */
-public static void main(String[] args) {
-		
-		Random random=new Random();
-		Scanner scanner=new Scanner(System.in);
-		
-	int num=random.nextInt(10)+1;//범위를 정해주고싶으면 /10.999이므로
-	int userNum=scanner.nextInt();
-	String result="Loose";
-	int num=0,choose=0;
 	
-	System.out.println("홀짝게임");
-	System.out.println("홀이면0,짝이면1를 입력:");
-	choose=scanner.nextInt();
-	
-	if (choose) {
-	
-	
-	
-	switch(choose);
-	case 0:
-	result="WIN";break;
-	case 1:
-	result="Loose";break;
-		
-	
-	
-	
-System.out.println("돈을 거시는데 짝이라고 생각하면0을" +"홀이라고 생각하면 1을 입력하시오");//홀이면0,짝이면1를 입력 5 0과1숫자중하나만 입력하세요
-
-	System.out.println("WIN");
-	
+	public static void main(String[] args) { 
+		   Scanner scanner = new Scanner(System.in); 
+		   Random random = new Random();
+		     
+		    int num = 0, num2 = 0, userNum = 0; 
+		   String result=""; 
+		   num=random.nextInt(10)+1; 
+		     
+		   System.out.println("=== 개발자만 보는 화면 =="); 
+		   System.out.println("랜덤수는"+num); 
+		   System.out.println("짝이라고 생각하면 0을 홀이라고 생각하면 1을 입력하시오"); 
+		   userNum = scanner.nextInt(); 
+		   num2 = num % 2; 
+		     
+		   if (num2 == userNum) { 
+		    result = "Win"; 
+		      
+		  } else {  
+		     System.out.println("LOSE"); 
+		   result = "LOSE"; 
+		  } 
+		   System.out.println("결과 :"+ result);
 	
 	
 }
 }
-	//
+	
 	
 	
 	

@@ -56,9 +56,13 @@ public class kaup2 {
 	}else if (kaup>=40) {
 		result="비만3단계";
 	}
-	
-		System.out.println(name+"의 BMI지수는 "+Double.parseDouble(String.format("%.2f", bmi)+"이고,"+result));
-	}
-		
+	//double d=Double.parseDouble(String.format("%.2f",kaup));
+		/
+		// * *System.out.println(name+"의 BMI지수는 "+d+"이고,+"+result+"이다");"
+				(정수는%d,문자는%s,소수점은%f)- 위문장을printf로 변경하시오 //?():;
+
+		System.out.printf("%s의 BMI지수:+%.2f,이고%s);
+}
+
 	}
 
